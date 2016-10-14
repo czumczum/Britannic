@@ -13,6 +13,19 @@ $breakpointFullHD: 1920px;
 // Animations
 $anim_duration1: 600ms;
 
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 //==========  MIXINS  ==========
 
 // Inline-block
@@ -38,6 +51,16 @@ $anim_duration1: 600ms;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
+}
+
+
+//Header fonts&text
+@mixin headertextfont($size) {
+    font-family: futura-pt, sans-serif;
+    color: #e7e7e7;
+    z-index: 1;
+    position: relative;
+    font-size: $size;
 }
 
 @mixin mediaquery($query){

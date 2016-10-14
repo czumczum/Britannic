@@ -38,18 +38,44 @@
                 height: 500px;
                 max-height: 60vh;
                 background-color: #5e0098;
+                background: -moz-linear-gradient(left, rgba(94,0,152,1) 0%, rgba(50,153,255,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(94,0,152,1)), color-stop(100%, rgba(50,153,255,1)));
+                background: -webkit-linear-gradient(left, rgba(94,0,152,1) 0%, rgba(50,153,255,1) 100%);
+                background: -o-linear-gradient(left, rgba(94,0,152,1) 0%, rgba(50,153,255,1) 100%);
+                background: -ms-linear-gradient(left, rgba(94,0,152,1) 0%, rgba(50,153,255,1) 100%);
+                background: linear-gradient(to right, rgba(94,0,152,1) 0%, rgba(50,153,255,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e0098', endColorstr='#3299ff', GradientType=1 );
                 position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
                 &::after {
                     content: "";
                     background-image: url(../../../img/header-people.jpg);
-                    background-size: 150%;
+                    background-size: 140%;
                     opacity: 0.1;
                     top: 0;
                     left: 0;
                     bottom: 0;
                     right: 0;
                     position: absolute;
-                    z-index: -1;
+                    z-index: 0;
+                }
+                h1 {
+                    @include headertextfont(3em);
+                    font-weight: 400;
+                    margin: 0;
+                }
+                p {
+                    @include headertextfont(1.2em);
+                    width: 60%;
+                    min-width: 400px;
+                    font-weight: 100;
+                }
+                a {
+                    @include headertextfont(1.2em);
+                    padding: 5%;
                 }
             }
         }

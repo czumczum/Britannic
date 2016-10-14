@@ -6,16 +6,15 @@
 
 .breadcrumbs {
     clear: both;
-    padding: 1em 0;
-    color: #999;
+    padding: 1em 2em;
 
     li {
         display: inline-block;
 
         &:not(:last-child):after {
-            content: '/';
+            content: '>';
             padding: 0 10px;
-            color: #dedede;
+            color: #7e7c92;
         }
     }
 

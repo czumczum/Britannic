@@ -1,9 +1,12 @@
-/**
-*
-* Top navigation
-*
-**/
+main {
+    background: #f2f5f9;
+    ul {
+        color: #2eb4e1;
+        font-size: 0.7em;
+        text-align: left;
+        li:last-child {
+            color: #7e7c92;
+        }
+    }
 
-.l-main {
-    padding: 30px;
 }

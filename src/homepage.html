@@ -60,7 +60,7 @@
             <li>Mitel Unifed Comms</li>
         </ul>
     </nav>
-    <div>
+    <div class="main-flex">
         <article>
             <h1>The cornerstone of your business communications.</h1>
             <p>
@@ -68,10 +68,24 @@
             </p>
         </article>
         <div class="brochure">
-            <img>
+            <!--Dropshadow-->
+            <svg height="0" xmlns="http://www.w3.org/2000/svg">
+                <filter id="drop-shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+                    <feOffset dx="3" dy="15" result="offsetblur"/>
+                    <feFlood flood-color="rgba(126,126,154,0.5)"/>
+                    <feComposite in2="offsetblur" operator="in"/>
+                    <feMerge>
+                        <feMergeNode/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </svg>
+            <!--End of shadow-->
             <h2>The Mitel brochure</h2>
             <p>Learn more about how we can manage and maintain your Mitel integration</p>
             <a>Download now</a>
+            <img src="img/brochure.png" class="shadowed">
         </div>
     </div>
 </main>

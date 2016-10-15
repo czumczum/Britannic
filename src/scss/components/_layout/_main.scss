@@ -58,20 +58,6 @@ main {
             font-family: acumin-pro, sans-serif;
             color: $colorLigth;
         }
-        a {
-            font-family: acumin-pro,sans-serif;
-            color: $colorLigth;
-            font-weight: 600;
-            position: relative;
-            &::after {
-                content: '>';
-                font-weight: 100;
-                position: relative;
-                font-size: 1.5em;
-                top: 2px;
-                padding: 0 0 0 1%;
-            }
-        }
     }
     .shadowed {
         -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));

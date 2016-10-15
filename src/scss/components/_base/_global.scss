@@ -66,11 +66,18 @@ textarea {
 }
 .main-flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     @include mediaquery(gt_tablet) {
-        flex-direction: row;
         justify-content: space-between;
+    }
+}
+.flex-top {
+    display: flex;
+    align-items: flex-start;
+    @include mediaquery(gt_hdready) {
+        flex-wrap: nowrap;
     }
 }

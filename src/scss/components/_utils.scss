@@ -4,6 +4,7 @@
 $colorMain: #313232;
 .color-main {color: $colorMain;}
 $colorLigth: #e7e7e7;
+$colorThemeLight: #2eb4e1;
 
 // Breakepoints
 $breakpointMobile: 768px;
@@ -106,12 +107,12 @@ $anim_duration1: 600ms;
 
     // 1025 - *
 	@else if $query == gt_tablet {
-		@media only screen and(min-width: #{$breakpointTablet}) { @content; }
+		@media only screen and(min-width: #{$breakpointTablet + 1px}) { @content; }
 	}
 
     // 1367 - *
 	@else if $query == gt_hdready {
-		@media only screen and(min-width: #{$breakpointHDready + 1px}) { @content; }
+		@media only screen and(min-width: #{$breakpointHDready}) { @content; }
 	}
 
     // 1921 - *

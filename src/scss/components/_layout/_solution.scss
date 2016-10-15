@@ -1,0 +1,26 @@
+.solution {
+    background: $colorThemeLight;
+    figure {
+        background: white;
+        max-width: 400px;
+        width: 80vw;
+        h4 {
+            font-family: futura-pt, sans-serif;
+            color: darken($colorThemeLight, 25%);
+            font-size: 2em;
+            font-weight: 100;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: acumin-pro, sans-serif;
+            color: $colorThemeLight;
+            font-size: 0.8em;
+            padding: 0 4em;
+            font-weight: 500;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: -1em;
+        }
+    }
+}

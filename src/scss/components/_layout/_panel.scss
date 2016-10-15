@@ -2,6 +2,7 @@
     background-color: white;
     font-family: futura-pt, sans-serif;
     position: relative;
+    min-height: 350px;
     @include mediaquery(gt_tablet) {
         justify-content: center;
     }
@@ -13,13 +14,12 @@
     }
     &:nth-of-type(2n) {
         .triangle {
-            bottom: -30px;
             border-color: $colorLightBg transparent transparent transparent;
         }
     }
     .main-flex {
         align-items: flex-start;
-        margin-bottom: 2em;
+        margin-bottom: 0em;
         @include mediaquery(gt_tablet) {
             justify-content: center;
         }
@@ -33,7 +33,8 @@
         color: $colorDark;
         size: 2em;
         font-weight: 400;
-        margin-top: 2em;
+        margin: 0;
+        padding-top: 1em;
     }
     h2 {
         color: $colorThemeLight;

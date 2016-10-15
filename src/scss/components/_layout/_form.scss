@@ -1,0 +1,9 @@
+.form {
+    background-color: $colorThemeLight;
+    h1 {
+        margin-top: 0;
+        @include headertextfont(2.5em);
+        padding-top: 1.5em;
+        color: white;
+    }
+}

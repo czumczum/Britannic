@@ -64,5 +64,26 @@
             }
         }
     }
+    .block-div {
+        p {
+            @include headertextfont(1.6em);
+            color: #3c3c3c;
+            margin-top: 0.5em;
+        }
+        a {
+            color: $colorThemeLight;
+            border-color: $colorThemeLight;
+            font-family: futura-pt, sans-serif;
+            margin-bottom: 1em;
+            &:hover {
+                background-color: lighten($colorLightBg, 10%);
+            }
+        }
+    }
+    .block {
+            width: 300px;
+            max-width: 60vw;
+            margin-top: 2em;
+    }
 
 }

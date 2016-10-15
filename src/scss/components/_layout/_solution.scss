@@ -67,7 +67,7 @@
     .block-div {
         p {
             @include headertextfont(1.6em);
-            color: #3c3c3c;
+            color: $colorDark;
             margin-top: 0.5em;
         }
         a {

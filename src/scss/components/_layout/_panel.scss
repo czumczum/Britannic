@@ -1,0 +1,33 @@
+.panel {
+    background-color: white;
+    font-family: futura-pt, sans-serif;
+    &:nth-of-type(2n) {
+        background-color: $colorLightBg;
+    }
+    .main-flex {
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 2em;
+    }
+    article {
+        max-width: 300px;
+        text-align: left;
+        margin: 2em;
+    }
+    h1 {
+        color: $colorDark;
+        size: 2em;
+        font-weight: 400;
+        margin-top: 2em;
+    }
+    h2 {
+        color: $colorThemeLight;
+        font-weight: 400;
+    }
+    p {
+
+    }
+    img {
+        max-width: 250px;
+    }
+}

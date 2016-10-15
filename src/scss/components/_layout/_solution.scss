@@ -1,5 +1,8 @@
 .solution {
     background: $colorThemeLight;
+    .main-flex {
+        justify-content: center;
+    }
     figure {
         background: white;
         max-width: 400px;
@@ -19,8 +22,18 @@
             font-weight: 500;
             margin-top: 0;
         }
-        img {
-            margin-bottom: -1em;
+    }
+    article {
+        width: 80%;
+        max-width: 500px;
+        h2 {
+            @include headertextfont(3em);
+            line-height: 1em;
+            text-align: left;
+        }
+        p {
+            @include headertextfont(0.9em);
+            font-family: acumin-pro, sans-serif;
         }
     }
 }

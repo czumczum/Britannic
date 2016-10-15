@@ -63,6 +63,7 @@ $anim_duration1: 600ms;
     z-index: 1;
     position: relative;
     font-size: $size;
+    font-weight: 400;
 }
 
 @mixin mediaquery($query){

@@ -49,11 +49,13 @@
             @include headertextfont(2.8em);
             line-height: 1em;
             text-align: left;
+            color: white;
         }
         p {
             @include headertextfont(1em);
             font-family: acumin-pro, sans-serif;
             text-align: left;
+            color: white;
         }
         a {
             font-family: acumin-pro, sans-serif;

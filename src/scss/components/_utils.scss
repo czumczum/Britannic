@@ -16,7 +16,6 @@ $breakpointFullHD: 1920px;
 
 // Animations
 $anim_duration1: 600ms;
-// TODO keyframes animations
 
 @keyframes opacity {
     0% {
@@ -27,6 +26,15 @@ $anim_duration1: 600ms;
     }
     100% {
         opacity: 0.5;
+    }
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 

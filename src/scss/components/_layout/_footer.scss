@@ -51,7 +51,15 @@ footer {
         height: 2em;
         border: 1px solid #5f628b;
         width: 2em;
-        padding: 4px;
+        padding: 5px;
         border-radius: 5px;
+        margin: 1em 1px;
+        &:hover {
+            fill: #271c4b;
+            background-color: #5f628b;
+            cursor: pointer;
+            animation:
+                spinning 0.5s;
+        }
     }
 }

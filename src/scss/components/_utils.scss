@@ -19,13 +19,27 @@ $anim_duration1: 600ms;
 
 @keyframes opacity {
     0% {
-        opacity: 0;
-    }
-    30% {
         opacity: 1;
     }
-    100% {
+    30% {
         opacity: 0.5;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes text-shadow {
+    0% {
+        text-shadow: 1px -1px 0 #3299ff, -1px 1px 0 #3299ff;
+    }
+    50% {
+        text-shadow: 1px -1px 10px #3299ff, -1px 1px 3px #3299ff;
+    }
+    100% {
+        text-shadow: 1px -1px 0 #3299ff, -1px 1px 0 #3299ff;
     }
 }
 

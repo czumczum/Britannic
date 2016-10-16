@@ -164,32 +164,33 @@
     <div class="triangle"> </div>
 </div>
 <section class="form">
-    <h1>Book a free demo</h1>
-    <form>
-    <div class="div-helper">
-        <!-- label + input -->
-        <label for="input-surname" class="form__label">First name</label>
-        <input type="text" name="input-surname" id="input-surname" class="form__input">
-        <!-- // -->
-        <!-- label + input -->
-        <label for="input-name" class="form__label">Last name</label>
-        <input type="text" name="input-name" id="input-name" class="form__input">
-        <!-- // -->
-    </div>
-    <div class="div-helper">
-        <!-- label + input -->
-        <label for="input-mail" class="form__label">Email</label>
-        <input type="email" name="input-mail" id="input-mail" class="form__input" placeholder="Text input and the label above">
-        <!-- // -->
-        <!-- label + input -->
-        <label for="input-phone" class="form__label">Phone number</label>
-        <input type="tel" name="input-phone" id="input-phone" class="form__input" placeholder="Text input and the label above">
-        <!-- // -->
-    </div>
-        <!-- label + input -->
+    <form action="" method="post" class="form">
+        <h1>Book a free demo</h1>
+        <div class="div-helper">
+            <div class="input">
+            <label for="input-surname" class="form__label">First name</label>
+            <input type="text" name="input-surname" id="input-surname" class="form__input">
+            </div>
+            <div class="input">
+            <label for="input-name" class="form__label">Last name</label>
+            <input type="text" name="input-name" id="input-name" class="form__input">
+            </div>
+        </div>
+        <div class="div-helper">
+            <div class="input">
+            <label for="input-mail" class="form__label">Email</label>
+            <input type="email" name="input-mail" id="input-mail" class="form__input">
+            </div>
+            <div class="input">
+            <label for="input-phone" class="form__label">Phone number</label>
+            <input type="tel" name="input-phone" id="input-phone" class="form__input">
+            </div>
+        </div>
+        <div class="input company">
         <label for="input-company" class="form__label">Company</label>
-        <input type="text" name="input-company" id="input-company" class="form__input" placeholder="Text input and the label above">
-        <!-- // -->
+            <input type="text" name="input-company" id="input-company" class="form__input">
+            </div>
+        <button class="btn link-button">Request a booking</button>
     </form>
 </section>
 

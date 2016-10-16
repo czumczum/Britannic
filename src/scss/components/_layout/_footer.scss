@@ -2,14 +2,15 @@ footer {
     background-color: #271c4b;
     color: #5f628b;
     font-family: acumin-pro, sans-serif;
-    div {
+    nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
         margin: 0 auto;
         max-width: 700px;
         flex-wrap: wrap;
-        padding-top: 1em;
+        padding: 1em 0;
+        border-bottom: 1px solid rgba(95, 98, 139, 0.7);
     }
     ul {
         font-size: 1em;
@@ -22,5 +23,35 @@ footer {
                 padding-top: 0.5em;
             }
         }
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 700px;
+        flex-wrap: wrap;
+    }
+    .breadcrumbs {
+        color: #5f628b;
+        padding: 0;
+        width: 100%;
+        font-size: 0.9em;
+        li:not(:last-child):after {
+            content: '|';
+            padding: 0 1px;
+            color: #5f628b;
+        }
+        &:first-of-type {
+            padding-bottom: 0.7em;
+        }
+    }
+    svg {
+        fill: #5f628b;
+        height: 2em;
+        border: 1px solid #5f628b;
+        width: 2em;
+        padding: 4px;
+        border-radius: 5px;
     }
 }

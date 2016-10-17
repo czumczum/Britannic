@@ -3,10 +3,10 @@
 * Button
 *
 **/
-button {
+input[type="submit"] {
     background: none;
     font-family: acumin-pro, sans-serif;
-    display: block !important;
+    display: block;
     color: white;
     margin: 1em auto 0 auto;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
+<html dir="ltr" lang="en" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title>Traditional Boilerplate - Bigger Picture</title>
@@ -30,8 +30,10 @@
     <meta property="og:image" content="/img/touch/chrome-touch-icon-192x192.png">
     <script src="https://use.typekit.net/jqq7yzg.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     @@JShead
 </head>
+
 <body class="text-center">
 <header>
     <nav>
@@ -165,16 +167,18 @@
     <div class="triangle"> </div>
 </div>
 <section class="form">
-    <form action="" method="post" class="form">
+    <form method="post" action="" class="form" id="contactForm">
         <h1>Book a free demo</h1>
+        <p class="form__response form__response--ok hidden">The message has been sent successfully.</p>
+        <p class="form__response form__response--error hidden">The message has been sent successfully.</p>
         <div class="div-helper">
             <div class="input">
-            <label for="input-surname" class="form__label">First name</label>
-            <input type="text" name="input-surname" id="input-surname" class="form__input">
+            <label for="input-firstName" class="form__label">First name</label>
+            <input type="text" name="input-firstName" id="input-firstName" class="form__input">
             </div>
             <div class="input">
-            <label for="input-name" class="form__label">Last name</label>
-            <input type="text" name="input-name" id="input-name" class="form__input">
+            <label for="input-lastName" class="form__label">Last name</label>
+            <input type="text" name="input-lastName" id="input-lastName" class="form__input">
             </div>
         </div>
         <div class="div-helper">
@@ -191,7 +195,7 @@
         <label for="input-company" class="form__label">Company</label>
             <input type="text" name="input-company" id="input-company" class="form__input">
             </div>
-        <button class="btn link-button">Request booking</button>
+        <input type="submit" class="btn link-button" value="Request booking">
     </form>
 </section>
 <!--TODO form validation-->

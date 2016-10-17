@@ -37,6 +37,10 @@ $(function () {
 
     // End of Ajax
 
+    $('.hamburger').on('click', () => $('header li').toggle());
+
+
+    //Fancy waypoint's one-way fade-ins
 
     $('main').waypoint(function(direction) {
         if (direction === 'down') {

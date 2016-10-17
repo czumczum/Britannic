@@ -120,3 +120,10 @@ a.link {
         padding: 0 0 0 1%;
     }
 }
+.waypoint {
+    opacity: 0.3;
+    transition: 1.5s ease;
+}
+.waypoint-here {
+    opacity: 1;
+}

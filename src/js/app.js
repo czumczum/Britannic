@@ -1,6 +1,8 @@
 'use strict';
 $(function () {
 
+ // Ajay request
+
     let form = $('#contactForm'),
         firstName = $('#input-firstName'),
         lastName = $('#input-lastName'),
@@ -25,8 +27,7 @@ $(function () {
     let validate = (e) => {
         e.preventDefault();
         if (firstName.val().length === 0 || lastName.val().length === 0 || mail.val().length === 0 || tel.val().length === 0 || company.val().length === 0) {
-            message_bad.removeClass('hidden').text('Please fill out all required fields before proceed');
-            console.log('Please fill out all required fields before proceed');
+            message_bad.removeClass('hidden').text('Please fill out all required fields before requesting a booking');
             return false;
             }
             return addMe();
@@ -34,4 +35,108 @@ $(function () {
 
     form.on("submit", validate);
 
+    // End of Ajax
+
+
+    $('main').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+
+    $('#solution-tab').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+
+    $('#panel-tab1').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+
+    $('#panel-tab2').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+    $('#panel-tab3').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+
+    $('#panel-tab4').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
+    $('.form').waypoint(function(direction) {
+        if (direction === 'down') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '50%'
+    }).waypoint(function(direction) {
+        if (direction === 'up') {
+            $(this).addClass("waypoint-here");
+        }
+    }, {
+        offset: '25%'
+    });
 });
+
+
+
+
+
+

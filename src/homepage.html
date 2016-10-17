@@ -2,11 +2,11 @@
 <html dir="ltr" lang="en" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
-    <title>Traditional Boilerplate - Bigger Picture</title>
+    <title>Britannic | Mitel Unifed Comms</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Description here...">
+    <meta name="description" content="Mitel Unifed Comms">
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="stylesheet" href="/css/main.css">
@@ -15,22 +15,22 @@
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="green">
-    <meta name="apple-mobile-web-app-title" content="Traditional Boilerplate - Bigger Picture">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Britannic | Mitel Unifed Comms">
     <meta name="msapplication-TileImage" content="/img/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#078490">
 
     <meta property="og:locale" content="en_GB">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Traditional Boilerplate - Bigger Picture">
-    <meta property="og:description" content="Description here...">
-    <!--//TODO metatagi-->
+    <meta property="og:title" content="Mitel Unifed Comms">
+    <meta property="og:description" content="Mitel Unifed Comms, Britannic">
     <meta property="og:url" content="http://www.biggerpicture.agency">
-    <meta property="og:site_name" content="Application name">
+    <meta property="og:site_name" content="Britannic">
     <meta property="og:image" content="/img/touch/chrome-touch-icon-192x192.png">
     <script src="https://use.typekit.net/jqq7yzg.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     @@JShead
 </head>
 
@@ -54,7 +54,7 @@
         <a class="link-button btn">Book a free demo</a>
     </section>
 </header>
-<main>
+<main class="waypoint">
     <nav>
         <ul class="breadcrumbs">
             <li>Home</li>
@@ -110,7 +110,7 @@
         </div>
     </section>
 </main>
-<section class="solution" id="solution-tab">
+<section class="solution waypoint" id="solution-tab">
     <section class="main-flex">
         <figure>
             <h4>Mitel MiVoice Business</h4>
@@ -129,7 +129,7 @@
         <a class="link-button btn">Learn about our partnership</a>
     </div>
 </section>
-<div class="panel">
+<div class="panel waypoint" id="panel-tab1">
     <h1>Reasons to trust us with your Mitel Integration</h1>
     <div class="main-flex">
         <img src="img/telephonelady.png">
@@ -139,8 +139,8 @@
         </article>
         <div class="triangle"> </div>
     </div>
-</div>
-<div class="panel main-flex">
+</div id=>
+<div class="panel main-flex waypoint" id="panel-tab2">
     <article>
         <h2>97% Customer Satisfaction</h2>
         <p class="pareth padding">Britannic works closely with us to ascertain our requirements, and the managed service gives me peace of mind that I don’t have to budget for the latest technical skills and technology.</p>
@@ -151,14 +151,14 @@
     <img src="img/heart.png">
     <div class="triangle"> </div>
 </div>
-<div class="panel main-flex">
+<div class="panel main-flex waypoint" id="panel-tab3">
     <img src="img/battery.png">
     <article>
         <h2>99.999% Core network availability SLA</h2>
         <p>We understand how important it is to be up and running all the time. That’s why we offer an SLA of 99.999%</p>
     </article>
 </div>
-<div class="panel main-flex">
+<div class="panel main-flex waypoint" id="panel-tab4">
     <article>
         <h2>20 years Mitel experience</h2>
         <p>We’re proud of our past. We’ve supported our customers with their Mitel Integrations for past 2 decades and will continue to do so for even longer</p>
@@ -166,7 +166,7 @@
     <img src="img/logo3.png">
     <div class="triangle"> </div>
 </div>
-<section class="form">
+<section class="form waypoint" id="form-tab">
     <form method="post" action="" class="form" id="contactForm">
         <h1>Book a free demo</h1>
         <p class="form__response form__response--ok hidden">The message has been sent successfully.</p>
@@ -198,7 +198,6 @@
         <input type="submit" class="btn link-button" value="Request booking">
     </form>
 </section>
-<!--TODO form validation-->
 <footer>
     <nav>
         <ul>Contact Centre
